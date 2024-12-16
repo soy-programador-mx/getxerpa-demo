@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  drfgetexperta:
+    image: drfgetexperta
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8010:8010
