@@ -161,7 +161,7 @@ cython_debug/
 #.idea/
 
 # VSCode
-.vscode
+.vscode/
 
 # Static files
 staticfiles/
