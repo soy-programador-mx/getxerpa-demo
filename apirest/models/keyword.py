@@ -13,7 +13,7 @@ class Keyword (models.Model):
         default=uuid.uuid4
     )
     keyword = models.CharField(max_length=100, null=False, blank=False)
-    merchant_id = models.OneToOneField(
+    merchant_id = models.ForeignKey(
         Merchant,
         on_delete=models.RESTRICT,
         null=False,
