@@ -1,4 +1,5 @@
 from django.db import models
+from .merchant import Merchant
 import uuid
 
 class Keyword (models.Model):
@@ -13,9 +14,8 @@ class Keyword (models.Model):
     )
     keyword = models.CharField(max_length=100, null=False, blank=False)
     merchant_id = models.OneToOneField(
-        'Merchant',
+        Merchant,
         on_delete=models.RESTRICT,
-        on_update=models.CASCADE,
         null=False,
         blank=False
     )

@@ -1,5 +1,5 @@
 
 from .category import Category
-from .keyword import Keyword
 from .merchant import Merchant
+from .keyword import Keyword
 from .transaction import Transaction
