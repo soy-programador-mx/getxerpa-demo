@@ -15,11 +15,11 @@ class TransactionSerializer(serializers.ModelSerializer):
                             'updated_at',
                             )
 
-    def enrichment(self, input):
+    def enrichment_data(self, input):
         object = {'category': {}, 'merchant': {}}
         try:
             for keyword in self.keywords:
-               if keyword in input['description'].lower():
+               if keyword in input.description.lower():
                     _row = Keyword.objects.select_related("merchant_id").get(keyword=keyword)
                     merchant = _row.merchant_id
                     object['merchant'] = {
@@ -29,8 +29,8 @@ class TransactionSerializer(serializers.ModelSerializer):
 
                     if merchant.category_id:
 
-                        if (float(input['amount']) < 0 and merchant.category_id.type == 'expense') or \
-                                (float(input['amount']) > 0 and merchant.category_id.type == 'income'):
+                        if (float(input.amount) < 0 and merchant.category_id.type == 'expense') or \
+                                (float(input.amount) > 0 and merchant.category_id.type == 'income'):
                                object['category'] = {
                                 "name": merchant.category_id.name,
                                 "type": merchant.category_id.type
@@ -44,6 +44,6 @@ class TransactionSerializer(serializers.ModelSerializer):
         return object
         
     def get_enrichment(self, obj):
-        return self.enrichment(obj)
+        return self.enrichment_data(obj)
         
         
