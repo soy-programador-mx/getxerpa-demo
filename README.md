@@ -7,7 +7,7 @@ Prueba técnica
 1. Clonar repositorio
 
 ```bash
-git clone ssh://git@gitea/soy-programador/getxperta.git
+git clone https://github.com/soy-programador-mx/getxerpa-demo.git
 ```
 
 2. Entrar al directorio del repositorio clonado
