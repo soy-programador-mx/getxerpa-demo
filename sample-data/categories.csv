@@ -1,0 +1,14 @@
+id,name,type
+79a9e1d5-176d-41c2-a592-a745cb4302d4,Entretenimiento & Recreación,expense
+8ed27362-9a18-4acc-ab34-c70994e8b250,Hogar & Familia,expense
+104016ff-0b92-4e48-8129-5af2d08e8908,Salud & Bienestar,expense
+c939fa87-2630-4c48-93d1-56ffac263489,Cuentas & Servicios,expense
+28172dd5-8046-47f2-a1c8-0a5a43fbd096,Supermercados & Tiendas de alimentos,expense
+0a634e46-79fb-4bd1-a0f7-0fda27076a1a,Restaurantes & Bares,expense
+41de7519-ba52-47d1-bf29-a0009a982570,Shopping,expense
+78f58e6d-f009-4a8b-b8b9-44e172a47f01,Vacaciones & Viajes,expense
+d3a36995-2900-4bf0-b1c3-8fc186b057c6,Automóvil & Transporte,expense
+7aff9fa2-1bbf-4e76-96f1-5858256e9b36,Transferencias,income
+70e1d059-91f6-497d-aa05-4a67185b214f,Sueldos y Salarios,income
+756b3ddb-618c-4dde-a36e-c50cf0423c13,Rendimientos,income
+363f35bf-3045-4d04-a2de-029cb095c9b7,Regalos & otros ingresos,income
